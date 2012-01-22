@@ -1,0 +1,5 @@
+Instructions
+------------
+
+1. Run your blog implementation on localhost:9000
+2. mvn test
