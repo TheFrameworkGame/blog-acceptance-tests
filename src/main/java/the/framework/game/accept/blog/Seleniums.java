@@ -11,7 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 /**
- * Abstraction over decisions we might want to change later, eg which WebDriver to use.
+ * Abstraction over decisions we might want to change later
+ * eg which WebDriver to use or configuration files
  * 
  * @author richard
  * 
@@ -30,6 +31,14 @@ public class Seleniums {
 
 	public static void localHome(final WebDriver driver) {
 		driver.get(testingURL);
+	}
+	
+	public static String getUsername() {
+		return "bob@gmail.com";
+	}
+	
+	public static String getPassword() {
+		return "secret";
 	}
 
 	public static void findFromClass(final WebDriver driver, final String className, final String contains, final int total) {

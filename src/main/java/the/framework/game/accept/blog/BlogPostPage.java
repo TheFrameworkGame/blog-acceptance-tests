@@ -18,6 +18,10 @@ public class BlogPostPage {
 	
 	private final WebDriver driver;
 
+	public void quit() {
+		driver.quit();
+	}
+
 	public BlogPostPage(String slug) {
 		super();
 		this.slug = slug;

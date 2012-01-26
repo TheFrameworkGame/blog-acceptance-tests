@@ -26,6 +26,8 @@ public class TestBlogPostPage {
 		
 		assertFalse(page.hasNoPrevious());
 		assertFalse(page.hasNoNext());
+		
+		page.quit();
 	}
 	
 }
