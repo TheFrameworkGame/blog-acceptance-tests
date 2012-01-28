@@ -3,12 +3,9 @@ package the.framework.game.accept.blog.admin;
 import static java.util.Arrays.asList;
 import static junit.framework.Assert.assertTrue;
 
-import java.io.IOException;
 import java.util.List;
 
 import org.junit.Test;
-
-import the.framework.game.accept.blog.admin.AdminPages;
 
 public class TestAdminPage {
 
