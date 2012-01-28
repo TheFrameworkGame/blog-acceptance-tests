@@ -1,7 +1,6 @@
 package the.framework.game.accept.blog.admin;
 
 import static junit.framework.Assert.assertTrue;
-import junit.framework.Assert;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

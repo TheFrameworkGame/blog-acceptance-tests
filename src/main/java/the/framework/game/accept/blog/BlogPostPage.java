@@ -9,9 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Lists;
-
 public class BlogPostPage {
 
 	private final String slug;
