@@ -18,10 +18,14 @@ public class AdminPages {
 	private final Authentication auth;
 	
 	public AdminPages() {
-		driver = Seleniums.build();
-		auth = new Authentication(driver);
+		auth = new Authentication();
 		auth.login();
+		driver = auth.getDriver();
 		Seleniums.localGet(driver, "/admin/");
+	}
+	
+	public boolean hasListPageFor(String category) {
+		return ! driver.findElements(By.linkText(category)).isEmpty();
 	}
 	
 	public AdminListPage getList(String category) {
