@@ -15,7 +15,7 @@ public class TestAdminPage {
 	// TODO: canLogoutFromAdminPage
 
 	@Test
-	public void hasLinksToListPages() throws IOException {
+	public void hasLinksToListPages() {
 		try (AdminPages admin = new AdminPages()) {			
 			assertTrue(admin.isAtAdminHome());
 			List<String> pages = asList("Categories", "Comments", "Posts", "Users");
@@ -26,7 +26,7 @@ public class TestAdminPage {
 	}
 	
 	@Test
-	public void adminRequiresLogin() throws IOException {
+	public void adminRequiresLogin() {
 		try (AdminPages admin = new AdminPages(false)) {
 			assertTrue(admin.isAtLogin());
 		}
